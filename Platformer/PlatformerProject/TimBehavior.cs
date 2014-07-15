@@ -75,11 +75,12 @@ namespace PlatformerProject
             //}
 
             // Keyboard
-            //var keyboard = WaveServices.Input.KeyboardState;
-            //if (keyboard.Right == ButtonState.Pressed)
-            //{
-            //    currentState = AnimState.Right;
-            //}
+            var keyboard = WaveServices.Input.KeyboardState;
+            if (keyboard.Right == ButtonState.Pressed)
+            {
+                
+                //currentState = AnimState.Right;
+            }
             //else if (keyboard.Left == ButtonState.Pressed)
             //{
             //    currentState = AnimState.Left;
@@ -157,6 +158,8 @@ namespace PlatformerProject
 
             //lastX = trans2D.X;
             //lastY = trans2D.Y;
+
+            
         }
 
         public void move(Vector2 ds)

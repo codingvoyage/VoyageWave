@@ -4,6 +4,9 @@ factory = {};
 
 
 function spawner(threadHandle)
+
+	return;
+	
 	while true do
 		wait(threadHandle, 1000);
 		factory:MakeTim();

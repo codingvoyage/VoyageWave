@@ -44,6 +44,15 @@ namespace PlatformerProject
 
         public override void UpdateFrame(TimeSpan gameTime)
         {
+
+            var keyboard = WaveServices.Input.KeyboardState;
+            if (keyboard.Right == ButtonState.Pressed)
+            {
+                s.EntityManager.Remove("Tim2");
+                s.EntityManager.Remove("fire");
+                //currentState = AnimState.Right;
+            }
+
             taskManager.Update(gameTime);
             base.UpdateFrame(gameTime);
         }

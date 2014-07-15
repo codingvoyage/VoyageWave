@@ -53,6 +53,8 @@ namespace PlatformerProject
                 .AddComponent(new AnimatedSpriteRenderer(DefaultLayers.Alpha))
                 .AddComponent(new TimBehavior());
 
+            
+
             scene.EntityManager.Add(tim);
             var anim2D = tim.FindComponent<Animation2D>();
             anim2D.Play(true);
@@ -62,6 +64,15 @@ namespace PlatformerProject
             count++;
         }
 
+        public void MakeFire()
+        {
+            //var fireParticleEntity = new Entity("fire")
+            //     .AddComponent(new Transform3D())
+            //     .AddComponent(fireParticle)
+            //     .AddComponent(new MaterialsMap(new BasicMaterial("Content/particleFire.wpk", DefaultLayers.Additive) { VertexColorEnabled = true }))
+            //     .AddComponent(new ParticleSystemRenderer());
+
+        }
 
     }
 }
